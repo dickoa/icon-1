@@ -94,12 +94,12 @@
 <div id="usage" class="section level1">
 <h1 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h1>
-<p>Icons can be inserted inline using inline code <code>`r icon::fontawesome("solid", "rocket")`</code> <img src="man/figure/gh-installation-1.svg" height="16px"> or <code>`r icon::fontawesome$solid$rocket`</code> <img src="man/figure/gh-installation-1.svg" height="16px">.</p>
+<p>Icons can be inserted inline using inline code <code>`r icon::fontawesome("rocket", style = "solid")`</code> <img src="man/figure/README-gh-installation-1.svg" height="16px"> or <code>`r icon::fontawesome$solid$rocket`</code> <img src="man/figure/README-gh-installation-1.svg" height="16px">.</p>
 <p>Icons can also be inserted using usual R chunks.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="st">```</span><span class="dt">{r icon-chunk}</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">icon::fontawesome("solid", "rocket") # equivalent to icon::fontawesome$solid$rocket</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">icon::fontawesome("rocket", style = "solid") # equivalent to icon::fontawesome$solid$rocket</span></span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="st">```</span></span></code></pre></div>
-<p><img src="man/figure/unnamed-chunk-2-1.svg" height="16px"></p>
+<p><img src="man/figure/README-unnamed-chunk-2-1.svg" height="16px"></p>
 <p>Custom icon sets can be created using the <code><a href="reference/icon_set.html">icon_set()</a></code> function, which accepts a directory of SVG files and allows them to be used as icons.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="st">```</span><span class="dt">{r icon-custom}</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="dt">custom &lt;- icon::icon_set("hex")</span></span>
@@ -111,7 +111,7 @@
 <span id="cb3-8"><a href="#cb3-8"></a><span class="st">```</span><span class="dt">{r icon-sticker}</span></span>
 <span id="cb3-9"><a href="#cb3-9"></a><span class="dt">custom$icon</span></span>
 <span id="cb3-10"><a href="#cb3-10"></a><span class="st">```</span></span></code></pre></div>
-<p><img src="man/figure/icon-sticker-1.svg" height="16px"></p>
+<p><img src="man/figure/README-icon-sticker-1.svg" height="16px"></p>
 </div>
 <div id="a-note-on-the-old-api" class="section level1">
 <h1 class="hasAnchor">
