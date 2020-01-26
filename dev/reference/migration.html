@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • icon</title>
+<title>Migration tools — fa • icon</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -42,7 +42,11 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Migration tools — fa" />
+<meta property="og:description" content="The icon package has been overhauled to be more efficient and extensible.
+Unfortunately this has led to several necessary interface changes. To
+minimise impact, please use the migrate_icon() function to update your files
+to use the new interface." />
 <meta property="og:image" content="https://pkg.mitchelloharawild.com/icon/logo.png" />
 <meta name="twitter:card" content="summary" />
 
@@ -63,7 +67,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -117,96 +121,53 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Migration tools</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mitchelloharawild/icon/blob/master/R/migration.R'><code>R/migration.R</code></a></small>
+    <div class="hidden name"><code>migration.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>The icon package has been overhauled to be more efficient and extensible.
+Unfortunately this has led to several necessary interface changes. To
+minimise impact, please use the <code>migrate_icon()</code> function to update your files
+to use the new interface.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>fa</span>(<span class='no'>...</span>)
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="academicons.html">download_academicons()</a></code> <code><a href="academicons.html">academicons()</a></code> </p>
-        </td>
-        <td><p>Academicons icons</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="fontawesome.html">download_fontawesome()</a></code> <code><a href="fontawesome.html">fontawesome()</a></code> </p>
-        </td>
-        <td><p>Font Awesome icons</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="icon_find.html">icon_find()</a></code> </p>
-        </td>
-        <td><p>Find icons in installed sets by name</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="icon_set.html">icon_set()</a></code> </p>
-        </td>
-        <td><p>Create a custom icon set</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="icon_style.html">icon_style()</a></code> </p>
-        </td>
-        <td><p>Customise the style of an icon</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ionicons.html">download_ionicons()</a></code> <code><a href="ionicons.html">ionicons()</a></code> </p>
-        </td>
-        <td><p>Ionicons icons</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="material_design.html">download_material_design()</a></code> <code><a href="material_design.html">material_design()</a></code> </p>
-        </td>
-        <td><p>Material design icons</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="migration.html">fa()</a></code> <code><a href="migration.html">ii()</a></code> <code><a href="migration.html">ai()</a></code> <code><a href="migration.html">migrate_icon()</a></code> </p>
-        </td>
-        <td><p>Migration tools</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="read_icon.html">read_icon()</a></code> </p>
-        </td>
-        <td><p>Read an individual icon</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="simple_icons.html">download_simple_icons()</a></code> <code><a href="simple_icons.html">simple_icons()</a></code> </p>
-        </td>
-        <td><p>Simple Icons</p></td>
-      </tr>
-    </tbody>
+<span class='fu'>ii</span>(<span class='no'>...</span>)
+
+<span class='fu'>ai</span>(<span class='no'>...</span>)
+
+<span class='fu'>migrate_icon</span>(<span class='no'>path</span>, <span class='kw'>ext</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".Rmd"</span>, <span class='st'>".R"</span>))</pre>
+
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>...</th>
+      <td><p>Unused.</p></td>
+    </tr>
+    <tr>
+      <th>path</th>
+      <td><p>A directory or file to migrate</p></td>
+    </tr>
+    <tr>
+      <th>ext</th>
+      <td><p>File extensions to update</p></td>
+    </tr>
     </table>
-  </div>
 
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#arguments">Arguments</a></li>
     </ul>
+
   </div>
 </div>
 
