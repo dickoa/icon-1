@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • icon</title>
+<title>Save icons into a local path — icon_save • icon</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -42,7 +42,10 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Save icons into a local path — icon_save" />
+<meta property="og:description" content="Store icons in a local directory to simplify sharing of documents containing
+icons. Bundling icons with your document or app avoids the need for
+collaborators or servers to have all icons from a library installed." />
 <meta property="og:image" content="https://pkg.mitchelloharawild.com/icon/logo.png" />
 <meta name="twitter:card" content="summary" />
 
@@ -63,7 +66,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -117,102 +120,52 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Save icons into a local path</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mitchelloharawild/icon/blob/master/R/save.R'><code>R/save.R</code></a></small>
+    <div class="hidden name"><code>icon_save.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Store icons in a local directory to simplify sharing of documents containing
+icons. Bundling icons with your document or app avoids the need for
+collaborators or servers to have all icons from a library installed.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>icon_save</span>(<span class='no'>icons</span>, <span class='kw'>path</span> <span class='kw'>=</span> <span class='st'>"."</span>)</pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="academicons.html">download_academicons()</a></code> <code><a href="academicons.html">academicons()</a></code> </p>
-        </td>
-        <td><p>Academicons icons</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="fontawesome.html">download_fontawesome()</a></code> <code><a href="fontawesome.html">fontawesome()</a></code> </p>
-        </td>
-        <td><p>Font Awesome icons</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="icon_find.html">icon_find()</a></code> </p>
-        </td>
-        <td><p>Find icons in installed sets by name</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="icon_save.html">icon_save()</a></code> </p>
-        </td>
-        <td><p>Save icons into a local path</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="icon_set.html">icon_set()</a></code> </p>
-        </td>
-        <td><p>Create a custom icon set</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="icon_style.html">icon_style()</a></code> </p>
-        </td>
-        <td><p>Customise the style of an icon</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ionicons.html">download_ionicons()</a></code> <code><a href="ionicons.html">ionicons()</a></code> </p>
-        </td>
-        <td><p>Ionicons icons</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="material_design.html">download_material_design()</a></code> <code><a href="material_design.html">material_design()</a></code> </p>
-        </td>
-        <td><p>Material design icons</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="migration.html">fa()</a></code> <code><a href="migration.html">ii()</a></code> <code><a href="migration.html">ai()</a></code> <code><a href="migration.html">migrate_icon()</a></code> </p>
-        </td>
-        <td><p>Migration tools</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="read_icon.html">read_icon()</a></code> </p>
-        </td>
-        <td><p>Read an individual icon</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="simple_icons.html">download_simple_icons()</a></code> <code><a href="simple_icons.html">simple_icons()</a></code> </p>
-        </td>
-        <td><p>Simple Icons</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>icons</th>
+      <td><p>A named list of icons, the names specify the icon's name in the new icon set.</p></td>
+    </tr>
+    <tr>
+      <th>path</th>
+      <td><p>A directory to save the icons into.</p></td>
+    </tr>
     </table>
-  </div>
 
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'>
+<span class='fu'>icon_save</span>(
+  <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>arrow</span> <span class='kw'>=</span> <span class='no'>fontawesome</span>$<span class='no'>solid</span>$<span class='no'>`arrow-right`</span>, <span class='kw'>alarm</span> <span class='kw'>=</span> <span class='no'>ionicons</span>$<span class='no'>alarm</span>),
+  <span class='kw'>path</span> <span class='kw'>=</span> <span class='st'>"icons"</span>
+)</div><div class='output co'>#&gt; <span class='error'>Error: This icon library is not yet installed, install it with `download_*()`.</span></div><div class='input'>
+<span class='no'>app_icons</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='icon_set.html'>icon_set</a></span>(<span class='st'>"icons"</span>)
+<span class='no'>app_icons</span>$<span class='no'>arrow</span></div><div class='output co'>#&gt; <span class='error'>Error: This icon library is not yet installed, install it with `download_*()`.</span></div><div class='input'>
+</div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#arguments">Arguments</a></li>
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 
